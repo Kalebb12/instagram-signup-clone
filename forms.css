@@ -54,9 +54,6 @@
     width: 22px;
 }
 
-.relative{
-    position: relative;
-}
 
 .relative > div{
     position: absolute;
@@ -81,10 +78,6 @@
     border: 0.5px solid #a1a0a0;
 }
 
-/* .input:focus::placeholder{
-    transform: translateY(-10px);
-    scale: 0.96;
-} */
 
 a{
     text-decoration: none;
@@ -119,19 +112,20 @@ a{
     position: absolute;
     top: 10px;
     left: 10px;
+    transition: all 0.1s ease;
 }
 
 
 .relative > input:focus ~ p{
     top: -6.5px;
     background-color: white;
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 .relative > input:valid ~ p{
     top: -6.5px;
     background-color: white;
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: 2px;
+    padding-right: 2px;
 }
